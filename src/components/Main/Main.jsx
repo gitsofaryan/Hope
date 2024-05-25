@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
@@ -16,25 +16,55 @@ const Main = () => {
     setInput,
     input,
   } = useContext(Context);
+  const [userDataPresent, setUserDataPresent] = useState(false);
+  const [userData, setUserData] = useState(null);
 
-  // Handler for card click
   const handleCardClick = (text) => {
     setInput(text);
     console.log(text);
     onSent(text);
   };
 
+  useEffect(() => {
+    const storedUserData = JSON.parse(localStorage.getItem("user"));
+    if (storedUserData) {
+      setUserData(storedUserData);
+      setUserDataPresent(true);
+    } else {
+      setUserDataPresent(false);
+    }
+  }, []);
   return (
-    <div className="main bg-gradient-to-r from-neutral-900 to-[#13002b] ">
+    <div className="main bg-gradient-to-r from-neutral-900 to-[#13002b] w-full ">
       <div className="flex items-center justify-between px-7">
         <img className=" mt-3 w-40" src={mainLogo} />
-        <img src={aiicon} alt="ailogo" className="w-10 h-10 rounded-full" />
+        {userDataPresent ? (
+          <img
+            src={userData.photoURL}
+            alt="ailogo"
+            className="w-10 h-10 rounded-full"
+          />
+        ) : (
+          <img src={aiicon} alt="ailogo" className="w-10 h-10 rounded-full" />
+        )}
       </div>
       <div className="main-container">
         {showResult ? (
           <div className="result">
             <div className="result-title">
-              <img src={aiicon} alt="ailogo" className="w-10 h-10" />
+              {userDataPresent ? (
+                <img
+                  src={userData.photoURL}
+                  alt="ailogo"
+                  className="w-10 h-10 rounded-full"
+                />
+              ) : (
+                <img
+                  src={aiicon}
+                  alt="ailogo"
+                  className="w-10 h-10 rounded-full"
+                />
+              )}
               <p className="text-gray-100">{recentPrompt}</p>
             </div>
             <div className="result-data">

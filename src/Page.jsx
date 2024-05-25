@@ -4,10 +4,10 @@ import Main from "./components/Main/Main";
 
 const Page = () => {
   return (
-    <>
+    <div className="flex w-full">
       <Sidebar />
       <Main />
-    </>
+    </div>
   );
 };
 
