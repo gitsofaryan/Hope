@@ -1,12 +1,12 @@
 ![VibeBot](/src/assets/logonew.png)
 
-VibeBot is an innovative AI chat application designed to elevate your chatting experience. With advanced features and seamless integration, VibeBot offers a personalized and engaging chat environment.
+"Hope is your digital companion, dedicated to fostering mental wellness, championing accessibility, and sparking imaginative journeys through personalized experiences tailored just for you."
 
 ![VibeBot](/src/assets/thumbnail.png)
 
 ## Overview
 
-VibeBot seamlessly integrates AI technology to provide a chat experience that adapts to your mood and preferences. Say goodbye to mundane interactions and hello to dynamic conversations with VibeBot.
+Hopeseamlessly integrates AI technology to provide a chat experience that adapts to your mood and preferences. Say goodbye to mundane interactions and hello to dynamic conversations with VibeBot.
 
 ## Features
 
