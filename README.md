@@ -6,7 +6,7 @@
 
 ## Overview
 
-Hopeseamlessly integrates AI technology to provide a chat experience that adapts to your mood and preferences. Say goodbye to mundane interactions and hello to dynamic conversations with VibeBot.
+Hope seamlessly integrates AI technology to provide a chat experience that adapts to your mood and preferences. Say goodbye to mundane interactions and hello to dynamic conversations with VibeBot.
 
 ## Features
 
