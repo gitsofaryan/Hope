@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDCl46c3gztp8DfM7O4ewkwUNjBnyt9J30",
-  authDomain: "vibechat-57009.firebaseapp.com",
-  projectId: "vibechat-57009",
-  storageBucket: "vibechat-57009.appspot.com",
-  messagingSenderId: "338667499289",
-  appId: "1:338667499289:web:267e41d5a7af48d6cedf88",
-  measurementId: "G-ENZGDYK80R",
+  apiKey: "AIzaSyAwkwQmgu4Q57cxP1a316qgiTXoL82Xhmk",
+  authDomain: "lifestylebot-703b4.firebaseapp.com",
+  projectId: "lifestylebot-703b4",
+  storageBucket: "lifestylebot-703b4.appspot.com",
+  messagingSenderId: "962219481644",
+  appId: "1:962219481644:web:829cf1745c8d0c8c48cf89",
+  measurementId: "G-NQNJ0HVX82"
 };
 
 const app = initializeApp(firebaseConfig);

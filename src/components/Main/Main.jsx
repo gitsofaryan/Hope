@@ -37,7 +37,7 @@ const Main = () => {
   return (
     <div className="main bg-gradient-to-r from-neutral-900 to-[#13002b] w-full ">
       <div className="flex items-center justify-between px-7">
-        <img className=" mt-3 w-40" src={mainLogo} />
+        <img className=" mt-3 w-30 h-20" src={mainLogo} />
         {userDataPresent ? (
           <img
             src={userData.photoURL}
@@ -123,7 +123,7 @@ const Main = () => {
               </div>
               <p>
                 <span className="bg-gradient-to-r from-indigo-500 to-[#ED3B77] bg-clip-text text-transparent">
-                  Hi there, pal!
+                  Hi there !
                 </span>
               </p>
               <p>How can I help you today?</p>
@@ -132,13 +132,14 @@ const Main = () => {
               <div
                 className="card bg-indigo-500/50 text-gray-50 hover:bg-[#ED3B77]/50 h-28 md:h-32 lg:h-32 rounded-[2rem]"
                 onClick={() =>
-                  handleCardClick(
-                    "Suggest beautiful places to see on an upcoming road trip"
-                  )
+                  handleCardClick([
+                    "Tell me something positive about myself. ",
+                    "I need a confidence boost.",
+                  ])
                 }
               >
-                <p className="text-gray-50">
-                  Suggest beautiful places to see on an upcoming road trip
+                <p className="text-gray-50 text-2xl">
+                  Personalized Affirmations
                 </p>
                 <img src={assets.compass_icon} alt="" />
               </div>
@@ -146,12 +147,13 @@ const Main = () => {
                 className="card bg-indigo-500/50 text-gray-50 hover:bg-[#ED3B77]/50 h-28 md:h-32 lg:h-32  rounded-[2rem]"
                 onClick={() =>
                   handleCardClick(
-                    "Briefly summarize this concept: urban planning"
+                    ["Give me a mindfulness activity for stress relief. ",
+                    "Suggest a daily gratitude practice."]
                   )
                 }
               >
-                <p className="text-gray-50">
-                  Briefly summarize this concept: urban planning
+                <p className="text-gray-50 text-2xl">
+                Mindfulness Exercises
                 </p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
@@ -159,12 +161,13 @@ const Main = () => {
                 className="card bg-indigo-500/50 text-gray-50 hover:bg-[#ED3B77]/50 h-28 md:h-28  lg:h-32 rounded-[2rem]"
                 onClick={() =>
                   handleCardClick(
-                    "Brainstorm team bonding activities for our work retreat"
+                    ["Create a fantasy story with a dragon and a hero. ",
+                    "Tell me a sci-fi story set in the future."]
                   )
                 }
               >
-                <p className="text-gray-50">
-                  Brainstorm team bonding activities for our work retreat
+                <p className="text-gray-50 text-2xl">
+                Personalized Story Narratives
                 </p>
                 <img src={assets.message_icon} alt="" />
               </div>
@@ -172,12 +175,13 @@ const Main = () => {
                 className="card bg-indigo-500/50 text-gray-50 hover:bg-[#ED3B77]/50 h-28 md:h-32 lg:h-32 rounded-[2rem]"
                 onClick={() =>
                   handleCardClick(
-                    "Improve the readability of the following code"
+                    ["Start a general knowledge quiz. ",
+                    "Let's play a word guessing game."]
                   )
                 }
               >
-                <p className="text-gray-50">
-                  Improve the readability of the following code
+                <p className="text-gray-50 text-2xl">
+                Quiz and Games
                 </p>
                 <img src={assets.code_icon} alt="" />
               </div>
@@ -194,6 +198,7 @@ const Main = () => {
               placeholder="Enter a prompt here"
               className="w-"
             />
+
             <div>
               {input ? (
                 <IoIosSend
@@ -204,8 +209,7 @@ const Main = () => {
             </div>
           </div>
           <p className="bottom-info text-gray-400 text-xs md:textsm lg:textsm">
-            Conversify may display inaccurate info, including about people, so
-            double-check its responses. Your privacy and Conversify Apps
+          "Hope: Your Gateway to Wellness, Accessibility, and Infinite Stories."
           </p>
         </div>
       </div>

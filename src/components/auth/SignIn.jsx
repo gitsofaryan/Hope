@@ -75,21 +75,17 @@ const SignIn = () => {
                 animate={{ y: 0, opacity: 2 }}
                 transition={{ type: "spring", duration: 2 }}
               >
-                <span className="bg-gradient-to-r from-indigo-500 to-[#ED3B77] bg-clip-text text-transparent">
-                  VibeBot
+                <span className="bg-gradient-to-r from-indigo-500 to-[#ED3B77] bg-clip-text text-transparent text-9xl">
+                  Hope
                 </span>
-                : Where Chat Meets Chill.
+
               </motion.h1>
-              <p className="mt-6 text-lg leading-8 text-gray-400">
-                Experience seamless, intuitive conversations that resonate with
-                your vibe. Enjoy one-click login and start chatting
-                effortlessly. Connect with VibeBot to discover a world where
-                technology meets tranquility, making every interaction both
-                meaningful and relaxed.
+              <p className="mt-10 leading-9 text-xl text-white">
+              "Hope is your digital companion, dedicated to fostering mental wellness, championing accessibility, and sparking imaginative journeys through personalized experiences tailored just for you."
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <motion.div
-                  className="text-4xl font-semibold text-gray-800 text-center mt-10"
+                  className="text-4xl font-semibold text-gray-800 text-center mt-5"
                   initial={{ y: +1500, opacity: 0 }}
                   animate={{ y: 0, opacity: 2 }}
                   transition={{ type: "spring", duration: 2 }}
